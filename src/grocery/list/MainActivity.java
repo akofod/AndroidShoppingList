@@ -128,6 +128,7 @@ public class MainActivity extends Activity {
 						.setCancelable(false)
 						.setPositiveButton("Add List",
 								new DialogInterface.OnClickListener() {
+									@Override
 									public void onClick(DialogInterface dialog,
 											int id) {
 										StringBuilder text = new StringBuilder();
@@ -148,6 +149,7 @@ public class MainActivity extends Activity {
 								})
 						.setNegativeButton("Cancel",
 								new DialogInterface.OnClickListener() {
+									@Override
 									public void onClick(DialogInterface dialog,
 											int id) {
 										dialog.cancel();
@@ -191,6 +193,7 @@ public class MainActivity extends Activity {
 			 * android.widget.AdapterView.OnItemLongClickListener#onItemLongClick
 			 * (android.widget.AdapterView, android.view.View, int, long)
 			 */
+			@Override
 			public boolean onItemLongClick(AdapterView<?> parent,
 					final View view, int position, long id) {
 				final String item = (String) parent.getItemAtPosition(position);

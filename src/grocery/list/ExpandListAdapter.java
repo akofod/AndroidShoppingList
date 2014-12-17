@@ -171,6 +171,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 				
 				// setup a dialog window
 				alertDialogBuilder.setCancelable(false).setNegativeButton("Got it!", new DialogInterface.OnClickListener() {
+					@Override
 					public void onClick(DialogInterface dialog, int id) {
 						Log.d("ExpandListAdapter", "Got it! button was clicked");
 						StringBuilder text = new StringBuilder();
@@ -196,6 +197,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 						removeItem(itemForAction, catData.getCategoryById(childItemCat));
 					}
 				}).setPositiveButton("Edit Item", new DialogInterface.OnClickListener() {
+					@Override
 					public void onClick(DialogInterface dialog, int id) {
 						//open dialog to edit item
 						//get prompt view
@@ -209,6 +211,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 						
 						// setup a dialog window
 						alertDialogBuilder.setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+							@Override
 							public void onClick(DialogInterface dialog, int id) {
 								
 								long quantity = childQuantity;
@@ -260,6 +263,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 				                        Toast.LENGTH_LONG).show();
 							}
 						}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+							@Override
 							public void onClick(DialogInterface dialog, int id) {
 								dialog.cancel();
 							}

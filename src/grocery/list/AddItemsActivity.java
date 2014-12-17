@@ -92,6 +92,7 @@ public class AddItemsActivity extends Activity {
 						.setCancelable(false)
 						.setPositiveButton("Add Item",
 								new DialogInterface.OnClickListener() {
+									@Override
 									public void onClick(DialogInterface dialog,
 											int id) {
 										StringBuilder text = new StringBuilder();
@@ -141,6 +142,7 @@ public class AddItemsActivity extends Activity {
 								})
 						.setNegativeButton("Cancel",
 								new DialogInterface.OnClickListener() {
+									@Override
 									public void onClick(DialogInterface dialog,
 											int id) {
 										dialog.cancel();

@@ -152,6 +152,7 @@ public class PresetItemsListAdapter extends BaseExpandableListAdapter {
 						.setCancelable(false)
 						.setPositiveButton("Add Item",
 								new DialogInterface.OnClickListener() {
+									@Override
 									public void onClick(DialogInterface dialog,
 											int id) {
 										// Add an item to shopping list
@@ -198,6 +199,7 @@ public class PresetItemsListAdapter extends BaseExpandableListAdapter {
 								})
 						.setNegativeButton("Cancel",
 								new DialogInterface.OnClickListener() {
+									@Override
 									public void onClick(DialogInterface dialog,
 											int id) {
 										dialog.cancel();

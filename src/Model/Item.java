@@ -123,6 +123,7 @@ public class Item {
 	 * 
 	 * @return String the item string.
 	 */
+	@Override
 	public String toString() {
 
 		if (quantity == 0) {
